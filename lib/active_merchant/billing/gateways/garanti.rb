@@ -230,7 +230,7 @@ module ActiveMerchant #:nodoc:
       end
 
       def parse(body)
-        xml = REXML::Document.new(body)
+        xml = REXML::Document.new(strip_invalid_xml_chars(body))
 
         response = {}
         xml.root.elements.to_a.each do |node|

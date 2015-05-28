@@ -91,7 +91,7 @@ class GarantiTest < Test::Unit::TestCase
             <SequenceNum>000008</SequenceNum>
             <ProvDate>20101218 08:56:39</ProvDate>
             <CardNumberMasked></CardNumberMasked>
-            <CardHolderName></CardHolderName>
+            <CardHolderName>Company Name & Another Name</CardHolderName>
             <HostMsgList></HostMsgList>
             <RewardInqResult>
                   <RewardList></RewardList>
