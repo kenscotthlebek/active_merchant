@@ -216,7 +216,7 @@ module ActiveMerchant #:nodoc:
         begin
           REXML::Document.new(xml)
         rescue REXML::ParseException
-          xml.gsub!(/&(?!(?:[a-z]+|#[0-9]+|x[a-zA-Z0-9]+);)/, '&amp;')
+          xml = xml.gsub(/&(?!(?:[a-z]+|#[0-9]+|x[a-zA-Z0-9]+);)/, '&amp;')
         end
 
         xml
